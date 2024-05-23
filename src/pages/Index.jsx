@@ -31,8 +31,8 @@ const Index = () => {
           View Map
         </Button>
       </Flex>
-      <Box mt={10}>
-        <Image src="/images/kayaking-varmdo-dalle.jpg" alt="Kayaking around Värmdö, Sweden" borderRadius="lg" />
+      <Box mt={10} display="flex" justifyContent="center" alignItems="center">
+        <Image src="/images/kayaking-varmdo-dalle.jpg" alt="Kayaking around Värmdö, Sweden" borderRadius="lg" maxWidth="100%" height="auto" />
       </Box>
       <Box mt={10}>
         <MapContainer center={[59.3706, 18.6984]} zoom={13} style={{ height: "500px", width: "100%" }}>
