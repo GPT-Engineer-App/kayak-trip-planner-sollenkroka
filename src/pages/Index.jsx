@@ -1,5 +1,7 @@
 import { Box, Heading, Text, Button, Flex } from "@chakra-ui/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 const Index = () => {
   return (
@@ -11,14 +13,17 @@ const Index = () => {
         Plan your kayaking trips starting from Sollenkroka with ease.
       </Text>
       <Flex justify="center" mt={6}>
-        <Button
-          colorScheme="teal"
-          variant="solid"
-          size="lg"
-          leftIcon={<FaMapMarkerAlt />}
-        >
-          View Map (Coming Soon)
-        </Button>
+        <MapContainer center={[59.3706, 18.6984]} zoom={13} style={{ height: "500px", width: "100%" }}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          <Marker position={[59.3706, 18.6984]}>
+            <Popup>
+              Sollenkroka
+            </Popup>
+          </Marker>
+        </MapContainer>
       </Flex>
     </Box>
   );
