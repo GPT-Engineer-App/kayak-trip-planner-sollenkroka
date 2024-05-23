@@ -22,14 +22,7 @@ const Index = () => {
         Plan your kayaking trips starting from Sollenkroka with ease.
       </Text>
       <Flex justify="center" mt={6}>
-        <Button
-          colorScheme="teal"
-          variant="solid"
-          size="lg"
-          leftIcon={<FaMapMarkerAlt />}
-        >
-          View Map
-        </Button>
+        {/* Button removed */}
       </Flex>
       <Box mt={10} display="flex" justifyContent="center" alignItems="center">
         <Image src="/images/kayaking-varmdo-dalle.jpg" alt="Kayaking around Värmdö, Sweden" borderRadius="lg" maxWidth="100%" height="auto" />
