@@ -28,7 +28,7 @@ const Index = () => {
           size="lg"
           leftIcon={<FaMapMarkerAlt />}
         >
-          View Map (Coming Soon)
+          View Map
         </Button>
       </Flex>
       <Box mt={10}>
