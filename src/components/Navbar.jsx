@@ -18,8 +18,13 @@ const Navbar = () => {
             </Button>
           </RouterLink>
           <RouterLink to="/contact">
-            <Button variant={"solid"} colorScheme={"teal"} size={"sm"}>
+            <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
               Contact
+            </Button>
+          </RouterLink>
+          <RouterLink to="/login">
+            <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
+              Login
             </Button>
           </RouterLink>
         </Flex>
