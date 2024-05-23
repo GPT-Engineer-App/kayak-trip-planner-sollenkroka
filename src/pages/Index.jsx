@@ -1,5 +1,6 @@
 import { Box, Heading, Text, Button, Flex } from "@chakra-ui/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import Map from "../components/Map";
 
 const Index = () => {
   return (
@@ -20,6 +21,9 @@ const Index = () => {
           View Map (Coming Soon)
         </Button>
       </Flex>
+      <Box mt={10}>
+        <Map />
+      </Box>
     </Box>
   );
 };
