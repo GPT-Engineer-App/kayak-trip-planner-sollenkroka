@@ -32,7 +32,7 @@ const Index = () => {
         </Button>
       </Flex>
       <Box mt={10}>
-        <Image src="/images/kayaking-varmdo.jpg" alt="Kayaking around Värmdö, Sweden" borderRadius="lg" />
+        <Image src="/images/kayaking-varmdo-dalle.jpg" alt="Kayaking around Värmdö, Sweden" borderRadius="lg" />
       </Box>
       <Box mt={10}>
         <MapContainer center={[59.3706, 18.6984]} zoom={13} style={{ height: "500px", width: "100%" }}>
