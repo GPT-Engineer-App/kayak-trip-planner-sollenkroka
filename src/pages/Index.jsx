@@ -1,15 +1,27 @@
-// Complete the Index page component here
-// Use chakra-ui
-import { Button } from "@chakra-ui/react"; // example
-import { FaPlus } from "react-icons/fa"; // example - use react-icons/fa for icons
+import { Box, Heading, Text, Button, Flex } from "@chakra-ui/react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Index = () => {
-  // TODO: Create the website here!
   return (
-    <Button>
-      Hello world! <FaPlus />
-    </Button>
-  ); // example
+    <Box textAlign="center" py={10} px={6}>
+      <Heading as="h2" size="xl" mt={6} mb={2}>
+        Welcome to the Kayaking Trip Planner
+      </Heading>
+      <Text color={"gray.500"}>
+        Plan your kayaking trips starting from Sollenkroka with ease.
+      </Text>
+      <Flex justify="center" mt={6}>
+        <Button
+          colorScheme="teal"
+          variant="solid"
+          size="lg"
+          leftIcon={<FaMapMarkerAlt />}
+        >
+          View Map (Coming Soon)
+        </Button>
+      </Flex>
+    </Box>
+  );
 };
 
 export default Index;
