@@ -27,8 +27,9 @@ const Index = () => {
           variant="solid"
           size="lg"
           leftIcon={<FaMapMarkerAlt />}
+          onClick={() => alert("Map feature is under development. Stay tuned!")}
         >
-          View Map (Coming Soon)
+          View Map
         </Button>
       </Flex>
       <Box mt={10}>
