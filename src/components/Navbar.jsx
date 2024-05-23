@@ -22,6 +22,11 @@ const Navbar = () => {
               Contact
             </Button>
           </RouterLink>
+          <RouterLink to="/plan">
+            <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
+              Plan
+            </Button>
+          </RouterLink>
           <RouterLink to="/login">
             <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
               Login
